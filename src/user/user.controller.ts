@@ -16,11 +16,11 @@ export class userController {
 
     @Get()
     async list() {
-        return {users: []}
+        return this.userService.list();
     }
     @Get(':id')
     async show(@Param('id', ParseIntPipe) id:number) {
-        return {user: {}, id}
+        return this.userService.show(id);
     }
 
     @Put(':id') //alteracao total
