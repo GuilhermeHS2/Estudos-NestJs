@@ -1,0 +1,5 @@
+### GET request to example server
+GET http://localhost:3000/users/2?name=Guilherme&email=guilherme%40teste&password=teste&telefone=a2222
+    ?generated-in=WebStorm
+
+###

@@ -23,7 +23,7 @@ export class UserService {
 
         await this.exists(id);
 
-        return this.prisma.user.findUnique({
+        return this.prisma.user.findUnique({ 
             where: {
                 id,
             }
